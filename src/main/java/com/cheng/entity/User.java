@@ -17,6 +17,7 @@ public class User implements Serializable {
     //@Excel(name = "编号",orderNum = "0")
     @ExcelIgnore
     private String id;
+    
     @Excel(name = "姓名",orderNum = "1",needMerge = true)
     private String name;
     @Excel(name = "性别",needMerge = true,orderNum = "4",replace = {"男_0","女_1"})
